@@ -1,0 +1,124 @@
+<body> 
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>  
+<div data-role="page" id="HomePage">
+     <div data-role="header">
+         <a data-rel="home" data-icon="home">Home </a>
+          <h1>Welcome to Pine Mountain</h1>
+          <h2>Georgia</h2>
+     </div>
+     <div data-role="content">     
+          <p><a href="#AboutPage" data-role="button">About Pine Mountain</a></p>
+	  <p><a href="#DirectionPage" data-role="button">Driving Directions to Pine Mountain</a></p>      
+	  <p><a href="#WeatherPage" data-role="button">Weather at Pine Mountain</a></p>         
+      <p><a href="#ListPage" data-role="button">Attractions</a></p> 
+         <p><a href="#Store" data-role="button">FeedBack</a></p>
+         <div id="tweet">
+        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+    </div>
+     </div>        
+</div>
+
+<div data-role="page" id="AboutPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>About Pine Mountain</h1>
+     </div>
+     <div data-role="content">     
+          <p>Pine Mountain, a charming southern town located just an hour southwest of Atlanta, is known across the South as the “Gateway to Callaway Gardens.”</p>
+	  <p><a href="#ContactPage" data-role="button">Contact Details</a></p>
+          <div id="status"></div>
+     </div>
+</div>
+
+<div data-role="page" id="ContactPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Contact Us</h1>
+     </div>
+     <div data-role="content">     
+          <p>Please contact Pine Mountain Tourism Association at (706) 663-4000 or (800) 441-3502.</p>
+         <p>TOURISM INFORMATION
+Pine Mountain Tourism
+and Visitors Information Center
+101 E. Broad Street, Pine Mountain, GA 31822
+www.pinemountain.org
+             (706) 663-4000 or (800) 441-3502</p>
+          <div id="status"></div>
+     </div>
+</div>
+
+<div data-role="page" id="DirectionPage">
+    <div data-role="header">
+       	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Directions</h1>
+     </div>
+       <div data-role="content" id="map_canvas"> 
+          <div id="status"></div>
+     </div>
+</div>
+
+<div data-role="page" id="WeatherPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Weather at Pine</h1>
+     </div>
+     <div data-role="content" id="weatherModule">
+        <p id="currentConditions"></p>
+        <div id="currentIcon"></div>
+         <div id="tweet">
+        <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+    </div>
+
+    </div>
+</div>
+    
+<div data-role="page" id="ListPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>List of Attractions</h1>
+     </div>
+     <div data-role="content">     
+         <p><a href="#CallawayPage" data-role="button">Callaway Gardens</a></p>
+	  <p><a href="#SafariPage" data-role="button">Wild Animal Safari</a></p>      
+	  <p><a href="#ParkPage" data-role="button">FDR State Park</a></p>         
+      <p><a href="#StablesPage" data-role="button">Roosevelt Stables</a></p>
+         <p><a href="#MountainPage" data-role="button">Pine Mountain Trail</a></p>         
+      <p><a href="#CountyPage" data-role="button">Harris County</a></p>
+          <div id="status"></div>
+     </div>
+</div>
+<div data-role="page" id="Store">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>FeedBack</h1>
+     </div>
+    <div>
+        <input type="text" placeholder="Give FeedBack" id="inputString" />
+        <h1 onclick="clearStorage()">Clear FeedBack</h1>
+        <h1 onclick="saveStatusLocally()">Store FeedBack</h1>
+        <h1 onclick="readStatus()">Display FeedBack</h1>
+        <div id="write"></div>
+        <p><a href="#NextPage" data-role="button">New Page</a></p> 
+    </div>
+</div>
+    
+    <div data-role="page" id="NextPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>ClearPage</h1>
+     </div>
+    
+    <h1 onclick="clearStorage2()">Clear</h1>
+    <h1 onclick="readStatus2()">Display</h1>
+    <div id="write2"></div>
+</div>
+        
+</body>
+     
+ 
